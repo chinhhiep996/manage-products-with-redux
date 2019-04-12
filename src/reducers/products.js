@@ -1,15 +1,11 @@
-const products = (state = [], action) => {
+import { RECEIVE_PRODUCTS, ADD_TO_CART } from '../constants/ActionTypes';
+
+const products = (state, action) => {
     switch (action.type) {
-        case 'FETCH_PRODUCTS':
-            return state;
-        case 'ADD_PRODUCT':
-            return [
-                ...state,
-                {
-                    name: action.name,
-                    price: action.price
-                }
-            ]
+        case ADD_TO_CART:
+            return {
+                ...state
+            };
         default:
             return state;
     }

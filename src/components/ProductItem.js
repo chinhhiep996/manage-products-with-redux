@@ -3,7 +3,7 @@ import { Card, CardText, CardBody, CardTitle, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import swal from 'sweetalert';
-import history from '../services/history';
+import history from '../services/History';
 
 import { CartContext } from '../contexts/Cart';
 
